@@ -36,7 +36,7 @@
     <!-- Rating state start -->
     <main>
       <form class="card">
-        <div class="icon">&#9733</div>
+        <img src="/images/icon-star.svg" class="icon" />
         <div class="text-group">
           <h1>How did we do?</h1>
           <p>
@@ -51,12 +51,12 @@
             <span>1</span>
           </label>
           <label for="2">
-          <input type="radio" name="rating" id="2" />
-          <span>2</span>
+            <input type="radio" name="rating" id="2" />
+            <span>2</span>
           </label>
           <label for="3">
             <input type="radio" name="rating" id="3" />
-          <span>3</span>
+            <span>3</span>
           </label>
           <label for="4">
             <input type="radio" name="rating" id="4" />
@@ -69,23 +69,34 @@
         </div>
         <button>Submit</button>
       </form>
+
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <div class="thank-you card">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="Thank you hero image"
+        />
+
+        <div class="rating-choice">
+          <p>You selected <span id="rating">*rating*</span> out of 5</p>
+        </div>
+
+        <h1>Thank you!</h1>
+
+        <p class="sub-text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate toget in touch!
+        </p>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
     </main>
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-    <!-- <div class="thank-you">
- You selected
-    *rating*
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-</div>
-   
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
   </body>
 </html>
