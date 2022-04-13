@@ -80,7 +80,7 @@ main {
   position: relative;
 }
 
-.radio-item {
+.radio-group span {
   color: var(--white);
   background-color: var(--very-dark-blue);
   font-size: 0.8rem;
@@ -89,8 +89,8 @@ main {
   cursor: pointer;
 }
 
-.radio-item:hover,
-.radio-item:focus {
+.radio-group span:hover,
+.radio-group span:focus {
   background-color: var(--primary-color);
 }
 
@@ -99,20 +99,32 @@ input[type="radio"] {
   opacity: 0;
 }
 
-[type="radio"]:checked+.radio-item {
+input[type="radio"]+span {
+  transition: all 0.2s;
+}
+
+input[type="radio"]:checked+span {
   background-color: var(--light-grey);
 }
 
 .card button {
   background-color: var(--primary-color);
   color: var(--white);
+  font-weight: 600;
   border-radius: 1rem;
   padding: 0.7rem 1.5rem;
   text-transform: uppercase;
   border: none;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.09rem;
+
+  transition: all 0.2s;
 }
 
-.card button:hover {
+.card button:hover,
+.card button:focus {
+  background-color: var(--white);
+  color: var(--primary-color);
+
+  outline: none;
   cursor: pointer;
 }
