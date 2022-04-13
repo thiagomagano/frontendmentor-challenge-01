@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="icon"
@@ -28,29 +35,28 @@
   <body>
     <!-- Rating state start -->
     <main>
-      <div class="card">
-        <div class="icon">⭐</div>
-        <h1>How did we do?</h1>
-        <p>
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
-        <form>
-          <div class="radio-group">
-            <input type="radio" name="rating" id="1" />
-            <label for="1">1</label>
-            <input type="radio" name="rating" id="2" />
-            <label for="2">2</label>
-            <input type="radio" name="rating" id="3" />
-            <label for="3">3</label>
-            <input type="radio" name="rating" id="4" />
-            <label for="4">4</label>
-            <input type="radio" name="rating" id="5" />
-            <label for="4">4</label>
-          </div>
-          <button>Submit</button>
-        </form>
-      </div>
+      <form class="card">
+        <div class="icon">&#9733</div>
+        <div class="text-group">
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+
+        <div class="radio-group">
+          <input type="radio" name="rating" id="1" />
+          <label for="1">1</label>
+          <input type="radio" name="rating" id="2" />
+          <label for="2">2</label>
+          <input type="radio" name="rating" id="3" />
+          <label for="3">3</label>
+          <input type="radio" name="rating" id="4" />
+          <label for="4">4</label>
+        </div>
+        <button>Submit</button>
+      </form>
     </main>
 
     <!-- Rating state end -->
