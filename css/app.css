@@ -148,6 +148,10 @@ input[type="radio"]:checked+span {
   align-items: center;
 }
 
+.invisible {
+  display: none;
+}
+
 .thank-you img {
   width: 9rem;
 }
