@@ -22,8 +22,7 @@ body {
 }
 
 main {
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: hsl(0, 0%, 0%);
   display: grid;
   place-items: center;
@@ -33,25 +32,28 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 18rem;
-  width: 20rem;
+  height: 23rem;
+  width: 23rem;
 
-
-  background-color: var(--very-dark-blue);
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 1rem 1rem 1rem hsla(0, 0%, 10%, 0.1);
+  background: linear-gradient(var(--dark-blue), var(--very-dark-blue));
+  padding: 2rem;
+  border-radius: 1.6rem;
 }
 
 .icon {
-  background-color: var(--dark-blue);
-  color: var(--primary-color);
-  width: 1rem;
-  padding: 0.4rem 0.5rem;
-  border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-color: var(--dark-blue);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.icon img {
+  width: 1rem;
+  height: 1rem;
 }
 
 .text-group {
@@ -77,19 +79,29 @@ main {
 
 .radio-group label {
   position: relative;
-  font-size: 0.8rem;
-  /* border-radius: 100%;
-padding: 0.8rem 1rem; */
   cursor: pointer;
+  height: 3.3rem;
+  width: 3.3rem;
+  font-size: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+  border-radius: 50%;
 }
 
 .radio-group span {
-  color: var(--white);
+  color: var(--light-grey);
   background-color: var(--dark-blue);
-  border-radius: 100%;
+  border-radius: 50%;
   display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  padding: 0.8rem 1rem;
 
 
   cursor: pointer;
@@ -99,6 +111,7 @@ padding: 0.8rem 1rem; */
 .radio-group span:hover,
 .radio-group span:focus {
   background-color: var(--primary-color);
+  color: var(--white);
 }
 
 input[type="radio"] {
@@ -112,24 +125,26 @@ input[type="radio"]:hover {
 }
 
 input[type="radio"]+span {
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 input[type="radio"]:checked+span {
   background-color: var(--light-grey);
+  color: var(--white);
 }
 
 .card button {
   background-color: var(--primary-color);
   color: var(--white);
-  font-weight: 6 00;
-  border-radius: 1rem;
+  font-weight: 600;
+  height: 2.6rem;
+  width: 100%;
+  border-radius: 6.6rem;
   padding: 0.7rem 1.5rem;
   text-transform: uppercase;
   border: none;
-  letter-spacing: 0.09rem;
-
-  transition: all 0.2s;
+  letter-spacing: 0.13rem;
+  transition: all 0.5s;
 }
 
 .card button:hover,
@@ -141,11 +156,16 @@ input[type="radio"]:checked+span {
   cursor: pointer;
 }
 
+.card button:active {
+  transform: scale(0.9);
+}
+
 
 /* THANK YOU CARD STYLES */
 
 .thank-you {
   align-items: center;
+  justify-content: space-around;
 }
 
 .invisible {
@@ -153,22 +173,31 @@ input[type="radio"]:checked+span {
 }
 
 .thank-you img {
-  width: 9rem;
+  width: 10rem;
 }
 
 .thank-you .rating-choice {
   background-color: var(--dark-blue);
   color: var(--primary-color);
-  padding: 0.6rem;
-  border-radius: 1rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 6.6rem;
 }
 
-.thank-you h1 {
-  font-size: 1.5rem;
-  font-weight: 600;
+.thank-you .text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  flex-direction: column;
 }
 
-.thank-you .sub-text {
+.thank-you .text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.thank-you .text p {
   color: var(--light-grey);
   line-height: 1.4;
+  text-align: center;
 }

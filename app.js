@@ -10,9 +10,13 @@ button.addEventListener('click', (e) => {
   const rating = document.querySelector('input[name="rating"]:checked')
 
   if (rating) {
-    ratingChoice.innerHTML = rating.value
-    thankYou.classList.remove('invisible')
+
+    setTimeout(() => {
+      ratingChoice.innerHTML = rating.value
+      thankYou.classList.remove('invisible')
+    }, 100)
     ratingForm.classList.add('invisible')
+
   }
   else {
     alert("Please choice a rating!")
